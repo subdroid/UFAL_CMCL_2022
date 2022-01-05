@@ -1,0 +1,179 @@
+Job resources: hard resource_list:         gpu=4,gpu_ram=2G
+Assigned GPUs:  4 5 6 7
+LRC:ubuntu 18.04: SGE 8.1.9 configured...
+INFO:training log:Initiating data copy
+INFO:training log:Category: FFDStd
+INFO:training log:Loading BERT tokenizer and model
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /bert-base-multilingual-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /bert-base-multilingual-uncased/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "GET /api/models/bert-base-multilingual-uncased HTTP/1.1" 200 1018
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /bert-base-multilingual-uncased/resolve/main/vocab.txt HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /bert-base-multilingual-uncased/resolve/main/tokenizer.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /bert-base-multilingual-uncased/resolve/main/added_tokens.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /bert-base-multilingual-uncased/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /bert-base-multilingual-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /bert-base-multilingual-uncased/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /bert-base-multilingual-uncased/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): huggingface.co:443
+DEBUG:urllib3.connectionpool:https://huggingface.co:443 "HEAD /bert-base-multilingual-uncased/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+Some weights of the model checkpoint at bert-base-multilingual-uncased were not used when initializing BertModel: ['cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+INFO:training log:Selecting device
+INFO:training log:Initiate tokenization
+INFO:training log:epoch 1 of 100
+INFO:training log:Average training loss: 9.837999
+INFO:training log:Training epoch duration: 0:13:17
+INFO:training log:Validation phase
+INFO:training log:  Validation loss: 8.375995
+INFO:training log:  Validation duration: 0:00:12
+INFO:training log:  Validation accuracy: 2.102801507434894
+INFO:training log:epoch 2 of 100
+INFO:training log:Average training loss: 8.840708
+INFO:training log:Training epoch duration: 0:13:19
+INFO:training log:Validation phase
+INFO:training log:  Validation loss: 8.391988
+INFO:training log:  Validation duration: 0:00:12
+INFO:training log:  Validation accuracy: 2.173801689725561
+INFO:training log:epoch 3 of 100
+INFO:training log:Average training loss: 8.412412
+INFO:training log:Training epoch duration: 0:13:19
+INFO:training log:Validation phase
+INFO:training log:  Validation loss: 8.804835
+INFO:training log:  Validation duration: 0:00:12
+INFO:training log:  Validation accuracy: 2.0992090963211254
+INFO:training log:epoch 4 of 100
+INFO:training log:Average training loss: 7.903638
+INFO:training log:Training epoch duration: 0:13:20
+INFO:training log:Validation phase
+INFO:training log:  Validation loss: 9.185420
+INFO:training log:  Validation duration: 0:00:12
+INFO:training log:  Validation accuracy: 2.1038113267151353
+INFO:training log:epoch 5 of 100
+INFO:training log:Average training loss: 7.516389
+INFO:training log:Training epoch duration: 0:13:20
+INFO:training log:Validation phase
+INFO:training log:  Validation loss: 8.639394
+INFO:training log:  Validation duration: 0:00:12
+INFO:training log:  Validation accuracy: 2.101186841726303
+INFO:training log:epoch 6 of 100
+INFO:training log:Average training loss: 7.131377
+INFO:training log:Training epoch duration: 0:13:20
+INFO:training log:Validation phase
+INFO:training log:  Validation loss: 10.331736
+INFO:training log:  Validation duration: 0:00:12
+INFO:training log:  Validation accuracy: 2.2323599388611686
+INFO:training log:epoch 7 of 100
+INFO:training log:Average training loss: 6.854651
+INFO:training log:Training epoch duration: 0:13:21
+INFO:training log:Validation phase
+INFO:training log:  Validation loss: 9.065390
+INFO:training log:  Validation duration: 0:00:12
+INFO:training log:  Validation accuracy: 2.110710611202053
+INFO:training log:epoch 8 of 100
+INFO:training log:Average training loss: 6.667041
+INFO:training log:Training epoch duration: 0:13:22
+INFO:training log:Validation phase
+INFO:training log:  Validation loss: 9.676829
+INFO:training log:  Validation duration: 0:00:12
+INFO:training log:  Validation accuracy: 2.172896353547106
+INFO:training log:epoch 9 of 100
+INFO:training log:Average training loss: 6.462439
+INFO:training log:Training epoch duration: 0:13:22
+INFO:training log:Validation phase
+INFO:training log:  Validation loss: 9.617334
+INFO:training log:  Validation duration: 0:00:12
+INFO:training log:  Validation accuracy: 2.1784599914993206
+INFO:training log:epoch 10 of 100
+INFO:training log:Average training loss: 6.297560
+INFO:training log:Training epoch duration: 0:13:22
+INFO:training log:Validation phase
+INFO:training log:  Validation loss: 10.458704
+INFO:training log:  Validation duration: 0:00:12
+INFO:training log:  Validation accuracy: 2.228852308902544
+INFO:training log:epoch 11 of 100
+INFO:training log:Average training loss: 6.152424
+INFO:training log:Training epoch duration: 0:13:22
+INFO:training log:Validation phase
+INFO:training log:  Validation loss: 9.857434
+INFO:training log:  Validation duration: 0:00:12
+INFO:training log:  Validation accuracy: 2.169288980745778
+INFO:training log:epoch 12 of 100
+INFO:training log:Average training loss: 6.063581
+INFO:training log:Training epoch duration: 0:13:21
+INFO:training log:Validation phase
+INFO:training log:  Validation loss: 11.199859
+INFO:training log:  Validation duration: 0:00:12
+INFO:training log:  Validation accuracy: 2.3319901186473593
+INFO:training log:epoch 13 of 100
+INFO:training log:Average training loss: 5.989338
+INFO:training log:Training epoch duration: 0:13:21
+INFO:training log:Validation phase
+INFO:training log:  Validation loss: 10.445232
+INFO:training log:  Validation duration: 0:00:12
+INFO:training log:  Validation accuracy: 2.2450912797573914
+INFO:training log:epoch 14 of 100
+INFO:training log:Average training loss: 5.876092
+INFO:training log:Training epoch duration: 0:13:22
+INFO:training log:Validation phase
+INFO:training log:  Validation loss: 10.800430
+INFO:training log:  Validation duration: 0:00:12
+INFO:training log:  Validation accuracy: 2.2437259848277593
+INFO:training log:epoch 15 of 100
+INFO:training log:Average training loss: 5.804140
+INFO:training log:Training epoch duration: 0:13:21
+INFO:training log:Validation phase
+INFO:training log:  Validation loss: 10.379660
+INFO:training log:  Validation duration: 0:00:12
+INFO:training log:  Validation accuracy: 2.2339371768469665
+INFO:training log:epoch 16 of 100
+INFO:training log:Average training loss: 5.726222
+INFO:training log:Training epoch duration: 0:13:22
+INFO:training log:Validation phase
+INFO:training log:  Validation loss: 10.671362
+INFO:training log:  Validation duration: 0:00:12
+INFO:training log:  Validation accuracy: 2.2423403413639855
+INFO:training log:epoch 17 of 100
+INFO:training log:Average training loss: 5.644468
+INFO:training log:Training epoch duration: 0:13:22
+INFO:training log:Validation phase
+INFO:training log:  Validation loss: 10.665849
+INFO:training log:  Validation duration: 0:00:12
+INFO:training log:  Validation accuracy: 2.242140376229876
+INFO:training log:epoch 18 of 100
+INFO:training log:Average training loss: 5.626598
+INFO:training log:Training epoch duration: 0:13:21
+INFO:training log:Validation phase
+INFO:training log:  Validation loss: 10.241020
+INFO:training log:  Validation duration: 0:00:12
+INFO:training log:  Validation accuracy: 2.2241554344745027
+INFO:training log:epoch 19 of 100
+INFO:training log:Average training loss: 5.569251
+INFO:training log:Training epoch duration: 0:13:21
+INFO:training log:Validation phase
+INFO:training log:  Validation loss: 11.131600
+INFO:training log:  Validation duration: 0:00:12
+INFO:training log:  Validation accuracy: 2.313978570638244
+INFO:training log:epoch 20 of 100
+INFO:training log:Average training loss: 5.525301
+INFO:training log:Training epoch duration: 0:13:22
+INFO:training log:Validation phase
+INFO:training log:  Validation loss: 10.798392
+INFO:training log:  Validation duration: 0:00:12
+INFO:training log:  Validation accuracy: 2.278530611512587
+INFO:training log:epoch 21 of 100
+======= EPILOG: Tue Jan 4 21:14:09 CET 2022
+== Limits:   gpu=4,gpu_ram=2G
+== Usage:    cpu=04:32:33, mem=51357.25558 GB s, io=7.04144 GB, vmem=3.051G, maxvmem=4.356G
+== Duration: 04:33:27 (16407 s)
+== Server name: dll3
